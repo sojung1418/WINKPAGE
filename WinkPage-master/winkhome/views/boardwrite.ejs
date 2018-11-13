@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Board</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="index" class="logo"><img src="/images/윙크컬러최종.png" border="0"></a>
+				<nav id="nav">
+					<a href="intro">Intro</a>
+						<a href="team">Team</a>
+					<a href="gallery">Gallery</a>
+					<a href="board">Board</a>
+					
+				</nav>
+			</div>
+		</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" >
+				<div class="inner">
+					<header class="major special">
+						<h1>Board</h1>
+					</header>
+					
+
+
+<div class="container">
+<table class="table table-bordered">
+    <thead>
+        <caption> 글쓰기 </caption>
+    </thead>
+    <tbody>
+        <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+            <tr>
+                <th>제목: </th>
+                <td><input type="text" placeholder="제목을 입력하세요. " name="subject" class="form-control"/></td>
+            </tr>
+            <tr>
+                <th>내용: </th>
+                <td><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>
+            </tr>
+            <tr>
+                <th>첨부파일: </th>
+                <td><input type="text" placeholder="파일을 선택하세요. " name="filename" class="form-control"/></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
+                    <input type="button" value="reset" class="pull-left"/>
+					<a href = "board"> <input type="button" value="글 목록으로 " class="pull-right" /></a>
+                    <!-- <a class="btn btn-default" onclick="sendData()"> 등록 </a>
+                    <a class="btn btn-default" type="reset"> reset </a>
+                    <a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> -->
+                </td>
+            </tr>
+        </form>
+    </tbody>
+</table>
+</div>
+
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+			<strong>	footer 자리입니다.</strong>
+			</section>
+
+		<!-- Scripts -->
+		<script src="/js/jquery.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+
+	</body>
+</html>
